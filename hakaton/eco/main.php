@@ -77,7 +77,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <button onclick="window.location.href='about.html'" type="button" class="btn btn-dark rounded-pill">Узнать больше</button>
+                <button onclick="window.location.href='about.php'" type="button" class="btn btn-dark rounded-pill">Узнать больше</button>
             </div>
         </div>
     </div>
