@@ -1,0 +1,134 @@
+@media (min-width: 988px) {
+        p{
+                font-size: calc(2px + (16 + 16*0.7) * ((100vw - 320px) / 1280));
+        }
+}
+
+.usluga{
+
+
+
+}
+
+*, *:before, *:after {
+        box-sizing: inherit;
+}
+
+.usluga {
+        background-color: #eaeaeaff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: #444444;
+        line-height: 1.5;
+}
+.dl-blurbs {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+
+}
+/* LIST */
+dl {
+        counter-reset: count;
+        background: linear-gradient(90deg, rgba(0,0,0,0.04) 20%, rgba(255,255,255,0) 0%);
+        padding-left: 4vw;
+padding-right: 4vw;
+        margin: 0;
+padding-left: 2vw;
+
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+
+
+}
+dl + dl {
+        counter-reset: counter 4;
+}
+dt {
+        counter-increment: count;
+        color: #4f6d7aff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+        text-transform: uppercase;
+}
+dt::before {
+        content: counter(count, decimal-leading-zero)".";
+        font-family: 'Abril Fatface', cursive;
+        color: #5ea5b8ff;
+        margin-left: -1vw;
+        padding-right: 12px;
+}
+
+.us{
+        color: #4f6d7aff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        text-transform: uppercase;
+}
+
+
+#tv {
+        position: relative;
+        border: solid #4f6d7aff;
+        max-width: 100%;
+        height: 80%;
+        background: white;
+        border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+        color: white;
+        box-shadow: 20px 20px rgba(0,0,0,.15);
+        transition: all .4s ease;
+        color: black;
+        font-size: calc(.5px + (16 + 16*0.7) * ((100vw - 320px) / 1500));
+}
+#tv:hover {
+        border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+        box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.border-left {
+        -webkit-mask: url(https://assets.codepen.io/339955/caret-left.svg) left / 16px 16px repeat-y,
+        url(https://assets.codepen.io/339955/rect.svg) right / calc(100% - 10px) auto repeat-y;
+        mask: url(https://assets.codepen.io/339955/caret-left.svg) left / 16px 16px repeat-y,
+        url(https://assets.codepen.io/339955/rect.svg) right / calc(100% - 10px) auto repeat-y;
+}
+
+
+
+.card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 50px;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 6px;
+        -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+    }
+    
+    .pro-button {
+        padding: 12px 42px;
+        background-color: #ffa000;
+        border-color: #ffa000
+    }
+    
+    .pro-button:focus {
+        outline: none !important;
+        background-color: #ffa000;
+        border-color: #ffa000;
+        box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important
+    }
+    
+    .pro-button:active {
+        outline: none !important;
+        background-color: #ffa000 !important;
+        border-color: #ffa000 !important
+    }
+    
+    .pro-button:hover {
+        padding: 12px 42px;
+        background-color: #f1a018;
+        border-color: #f1a018
+    }

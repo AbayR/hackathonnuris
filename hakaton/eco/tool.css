@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+.info{
+    background:#fff;
+    font-size: calc(.5px + (16 + 16*0.7) * ((100vw - 320px) / 1800));
+}
+.box{
+    padding: 3%;
+    width:auto;
+    height:auto;
+    background:#fff;
+    border: solid black;
+    float:left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.box3{
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+}
+
+.box2{
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
+
+.oddboxinner{
+    transform: rotate(-2deg);
+}
+
+.evenboxinner{
+    transform: rotate(2deg);
+    margin:15px;
+    padding:0 5px;
+    float:right;
+}
+
+img{
+    max-height: 500px;
+}
+
